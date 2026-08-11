@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Lesson 6 Kanji Practice</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <div id="intro">
+            <h2>📖 漢字 📖</h2>
+            <p>These activities are based on the Kanji and word list for this lesson. Complete the exercises here and answer the questions on the next slides!</p>
+        </div>
+
+        <div id="part1">
+            <h3>＜パート１＞　時間をえらびましょう！　Let's choose the correct time!</h3>
+            <p><strong>Instructions:</strong> Click on the speaker button to hear a time being read and select the correct time out of the four options written in Kanji.</p>
+
+            <div class="exercise" id="exercise-p1">
+                <div class="question" id="4:30">
+                    1) <span data-audio="q1">🔈</span>
+                    <div class="choices" id="choices-q1">
+                        <button class="choice choice-q1" id="5:30" data-correct="incorrect">五時半</button>
+                        <button class="choice choice-q1" id="9:30" data-correct="incorrect">九時半</button>
+                        <button class="choice choice-q1" id="6:30" data-correct="incorrect">六時半</button>
+                        <button class="choice choice-q1" id="4:30" data-correct="correct">四時半</button>
+                    </div>
+                    <div class="controls-p1" id="controls-p1-1">
+                        <button class="clear-p1" id="clear-p1-1">Clear feedback</button>
+                    </div>
+                    <div class="feedback-p1" id="feedback-p1-1"></div>
+                </div>
+
+                <div class="question" id="5:23">
+                    2) <span data-audio="q2">🔈</span>
+                    <div class="choices" id="choices-q2">
+                        <button class="choice choice-q2" id="5:20" data-correct="incorrect">五時二十分</button>
+                        <button class="choice choice-q2" id="4:23" data-correct="incorrect">四時二十三分</button>
+                        <button class="choice choice-q2" id="4:28" data-correct="incorrect">四時二十八分</button>
+                        <button class="choice choice-q2" id="5:23" data-correct="correct">五時二十三分</button>
+                    </div>
+                    <div class="controls-p1" id="controls-p1-2">
+                        <button class="clear-p1" id="clear-p1-2">Clear feedback</button>
+                    </div>
+                    <div class="feedback-p1" id="feedback-p1-2"></div>
+                </div>
+
+                <div class="question" id="8:50">
+                    3) <span data-audio="q3">🔈</span>
+                    <div class="choices" id="choices-q3">
+                        <button class="choice choice-q3" id="8:40" data-correct="incorrect">八時四十分</button>
+                        <button class="choice choice-q3" id="7:20" data-correct="incorrect">七時二十分</button>
+                        <button class="choice choice-q3" id="8:50" data-correct="correct">八時五十分</button>
+                        <button class="choice choice-q3" id="9:35" data-correct="incorrect">九時三十五分</button>
+                    </div>
+                    <div class="controls-p1" id="controls-p1-3">
+                        <button class="clear-p1" id="clear-p1-3">Clear feedback</button>
+                    </div>
+                    <div class="feedback-p1" id="feedback-p1-3"></div>
+                </div>
+
+                <div class="question" id="7:46">
+                    4) <span data-audio="q4">🔈</span>
+                    <div class="choices" id="choices-q4">
+                        <button class="choice choice-q4" id="7:46" data-correct="correct">七時四十六分</button>
+                        <button class="choice choice-q4" id="6:48" data-correct="incorrect">六時四十八分</button>
+                        <button class="choice choice-q4" id="8:36" data-correct="incorrect">八時三十六分</button>
+                        <button class="choice choice-q4" id="9:46" data-correct="incorrect">九時四十六分</button>
+                    </div>
+                    <div class="controls-p1" id="controls-p1-4">
+                        <button class="clear-p1" id="clear-p1-4">Clear feedback</button>
+                    </div>
+                    <div class="feedback-p1" id="feedback-p1-4"></div>
+                </div>
+
+                <div class="question" id="9:18">
+                    5) <span data-audio="q5">🔈</span>
+                    <div class="choices" id="choices-q5">
+                        <button class="choice choice-q5" id="9:16" data-correct="incorrect">九時十六分</button>
+                        <button class="choice choice-q5" id="9:18" data-correct="correct">九時十八分</button>
+                        <button class="choice choice-q5" id="5:18" data-correct="incorrect">五時十八分</button>
+                        <button class="choice choice-q5" id="5:20" data-correct="incorrect">五時二十分</button>
+                    </div>
+                    <div class="controls-p1" id="controls-p1-5">
+                        <button class="clear-p1" id="clear-p1-5">Clear feedback</button>
+                    </div>
+                    <div class="feedback-p1" id="feedback-p1-5"></div>
+                </div>
+
+                <div class="question" id="6:51">
+                    6) <span data-audio="q6">🔈</span>
+                    <div class="choices" id="choices-q6">
+                        <button class="choice choice-q6" id="6:50" data-correct="incorrect">六時五十分</button>
+                        <button class="choice choice-q6" id="6:41" data-correct="incorrect">六時四十一分</button>
+                        <button class="choice choice-q6" id="7:51" data-correct="incorrect">七時五十一分</button>
+                        <button class="choice choice-q6" id="6:51" data-correct="correct">六時五十一分</button>
+                    </div>
+                    <div class="controls-p1" id="controls-p1-6">
+                        <button class="clear-p1" id="clear-p1-6">Clear feedback</button>
+                    </div>
+                    <div class="feedback-p1" id="feedback-p1-6"></div>
+                </div>
+            </div>
+        </div>
+
+        <div id="part2">
+            <h3>＜パート２＞　考えましょう！　Let's think!</h3>
+            <p><strong>Instructions:</strong> Drag one tile from the left tile bank and another tile from the right tile bank to create じゅくご (i.e., words comprised of multiple Kanji) of time expressions. Examine the rules of combinations and reading/meaning of each じゅくご to derive compounding rules (or lack thereof).</p>
+            <p><strong>Note:</strong> You will have to click "reset" after creating each じゅくご.</p>
+
+            <div id="grid-p2">
+                <div class="tiles-p2" id="left-kanji">
+                    <p>かんじ１</p>
+                    <div class="tile-p2" draggable="true" data-type="left" data-name="every">毎</div>
+                    <div class="tile-p2" draggable="true" data-type="left" data-name="now">今</div>
+                </div>
+            
+                <div class="tiles-p2" id="right-kanji">
+                    <p>かんじ２</p>
+                    <div class="tile-p2" draggable="true" data-type="right" data-name="day">日</div>
+                    <div class="tile-p2" draggable="true" data-type="right" data-name="month">月</div>
+                    <div class="tile-p2" draggable="true" data-type="right" data-name="year">年</div>
+                </div>
+
+                <div class="zone-p2" id="assembly-box">
+                    <div class="dropzone-p2" id="assembly">
+                        <p>Drop here</p>
+                        <div class="slot-p2" data-accept="left">かんじ１</div>
+                        <div class="slot-p2" data-accept="right">かんじ２</div>
+                    </div>
+                    <div class="feedback-p2" id="feedback-general"></div>
+                    <div class="feedback-p2" id="feedback-reading"></div>
+                    <div class="feedback-p2" id="feedback-meaning"></div>
+                    </div>
+                </div>
+
+                <div class="summary">
+                    <div id="word-summary"></div>
+                    <div id="rule-summary"></div>
+                </div>
+
+                <div class="controls-p2" id="controls-p2-1">
+                    <button class="reset" id="reset-p2">Reset</button>
+                    <button id="summary">Show summary</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="part3">
+            <h3>＜パート３＞　こんなとき、どうする？　What would you do in these situations?</h3>
+            <p><strong>Instructions:</strong> You are studying abroad at a Japanese university. How would you ask your professor for permission in the following situations?</p>
+            <p><strong>Notes:</strong> Make sure to use Kanji for the verb and click the "hint" button for help.</p>
+
+        <div class="exercise" id="exercise-p3">
+            <div class="situation" id="situation-1">
+                1) You want to <span>speak English</span> in class.
+                <div class="answer" id="answer-1">
+                    <input class="input" id="input-1">
+                </div>
+                <div class="feedback-p3" id="feedback-p3-1"></div>
+                <div class="controls-p3" id="controls-p3-1">
+                    <button class="check-p3" id="check-p3-1">Check answer</button>
+                    <button class="hint-p3" id="hint-p3-1">Hint</button>
+                    <button class="clear-p3" id="clear-p3-1">Clear feedback</button>
+                </div>
+            </div> 
+
+            <div class="situation" id="situation-2">
+                2) You want to <span>look at your notes（ノート）</span> during an exam.
+                <div class="answer" id="answer-2">
+                    <input class="input" id="input-2">
+                </div>
+                <div class="feedback-p3" id="feedback-p3-2"></div>
+                <div class="controls-p3" id="controls-p3-2">
+                    <button class="check-p3" id="check-p3-2">Check answer</button>
+                    <button class="hint-p3" id="hint-p3-2">Hint</button>
+                    <button class="clear-p3" id="clear-p3-2">Clear feedback</button>
+                </div>
+            </div> 
+
+            <div class="situation" id="situation-3">
+                3) You want to <span>stand up</span> in class since you cannot see the board.
+                <div class="answer" id="answer-3">
+                    <input class="input" id="input-3">
+                </div>
+                <div class="feedback-p3" id="feedback-p3-3"></div>
+                <div class="controls-p3" id="controls-p3-3">
+                    <button class="check-p3" id="check-p3-3">Check answer</button>
+                    <button class="hint-p3" id="hint-p3-3">Hint</button>
+                    <button class="clear-p3" id="clear-p3-3">Clear feedback</button>
+                </div>
+            </div>
+            
+            <div class="situation" id="situation-4">
+                4) You want to <span>write English</span> in an exam.
+                <div class="answer" id="answer-4">
+                    <input class="input" id="input-4">
+                </div>
+                <div class="feedback-p3" id="feedback-p3-4"></div>
+                <div class="controls-p3" id="controls-p3-4">
+                    <button class="check-p3" id="check-p3-4">Check answer</button>
+                    <button class="hint-p3" id="hint-p3-4">Hint</button>
+                    <button class="clear-p3" id="clear-p3-4">Clear feedback</button>
+                </div>
+            </div>
+
+            <div class="situation" id="situation-5">
+                5) You want to <span>ask your friend</span> for help with an assignment.
+                <div class="answer" id="answer-5">
+                    <input class="input" id="input-5">
+                </div>
+                <div class="feedback-p3" id="feedback-p3-5"></div>
+                <div class="controls-p3" id="controls-p3-5">
+                    <button class="check-p3" id="check-p3-5">Check answer</button>
+                    <button class="hint-p3" id="hint-p3-5">Hint</button>
+                    <button class="clear-p3" id="clear-p3-5">Clear feedback</button>
+                </div>
+            </div> 
+        </div>
+    </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
