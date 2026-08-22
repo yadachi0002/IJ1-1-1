@@ -3,223 +3,166 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Lesson 6 Kanji Practice</title>
+        <title>第１課読み物１</title>
         <link rel="stylesheet" href="styles.css">
     </head>
 
     <body>
         <div id="intro">
-            <h2>📖 漢字 📖</h2>
-            <p>These activities are based on the Kanji and word list for this lesson. Complete the exercises here and answer the questions on the next slides!</p>
-        </div>
+            <h1>📖 第１課読み物１：アニメ映画監督　宮崎駿 📖</h1>
+            <h2>I. 読む前に</h2>
+            <div id="pre-reading">
+                <p>1) どんなアニメを見たことがありますか。</p>
+                <input class="input-1" id="input-1-1">
+                <button class="check" id="check-1-1">Check answer</button>
+                <div class="feedback" id="feedback-1-1"></div>
 
-        <div id="part1">
-            <h3>＜パート１＞　時間をえらびましょう！　Let's choose the correct time!</h3>
-            <p><strong>Instructions:</strong> Click on the speaker button to hear a time being read and select the correct time out of the four options written in Kanji.</p>
-
-            <div class="exercise" id="exercise-p1">
-                <div class="question" id="4:30">
-                    1) <span data-audio="q1">🔈</span>
-                    <div class="choices" id="choices-q1">
-                        <button class="choice choice-q1" id="5:30" data-correct="incorrect">五時半</button>
-                        <button class="choice choice-q1" id="9:30" data-correct="incorrect">九時半</button>
-                        <button class="choice choice-q1" id="6:30" data-correct="incorrect">六時半</button>
-                        <button class="choice choice-q1" id="4:30" data-correct="correct">四時半</button>
-                    </div>
-                    <div class="controls-p1" id="controls-p1-1">
-                        <button class="clear-p1" id="clear-p1-1">Clear feedback</button>
-                    </div>
-                    <div class="feedback-p1" id="feedback-p1-1"></div>
-                </div>
-
-                <div class="question" id="5:23">
-                    2) <span data-audio="q2">🔈</span>
-                    <div class="choices" id="choices-q2">
-                        <button class="choice choice-q2" id="5:20" data-correct="incorrect">五時二十分</button>
-                        <button class="choice choice-q2" id="4:23" data-correct="incorrect">四時二十三分</button>
-                        <button class="choice choice-q2" id="4:28" data-correct="incorrect">四時二十八分</button>
-                        <button class="choice choice-q2" id="5:23" data-correct="correct">五時二十三分</button>
-                    </div>
-                    <div class="controls-p1" id="controls-p1-2">
-                        <button class="clear-p1" id="clear-p1-2">Clear feedback</button>
-                    </div>
-                    <div class="feedback-p1" id="feedback-p1-2"></div>
-                </div>
-
-                <div class="question" id="8:50">
-                    3) <span data-audio="q3">🔈</span>
-                    <div class="choices" id="choices-q3">
-                        <button class="choice choice-q3" id="8:40" data-correct="incorrect">八時四十分</button>
-                        <button class="choice choice-q3" id="7:20" data-correct="incorrect">七時二十分</button>
-                        <button class="choice choice-q3" id="8:50" data-correct="correct">八時五十分</button>
-                        <button class="choice choice-q3" id="9:35" data-correct="incorrect">九時三十五分</button>
-                    </div>
-                    <div class="controls-p1" id="controls-p1-3">
-                        <button class="clear-p1" id="clear-p1-3">Clear feedback</button>
-                    </div>
-                    <div class="feedback-p1" id="feedback-p1-3"></div>
-                </div>
-
-                <div class="question" id="7:46">
-                    4) <span data-audio="q4">🔈</span>
-                    <div class="choices" id="choices-q4">
-                        <button class="choice choice-q4" id="7:46" data-correct="correct">七時四十六分</button>
-                        <button class="choice choice-q4" id="6:48" data-correct="incorrect">六時四十八分</button>
-                        <button class="choice choice-q4" id="8:36" data-correct="incorrect">八時三十六分</button>
-                        <button class="choice choice-q4" id="9:46" data-correct="incorrect">九時四十六分</button>
-                    </div>
-                    <div class="controls-p1" id="controls-p1-4">
-                        <button class="clear-p1" id="clear-p1-4">Clear feedback</button>
-                    </div>
-                    <div class="feedback-p1" id="feedback-p1-4"></div>
-                </div>
-
-                <div class="question" id="9:18">
-                    5) <span data-audio="q5">🔈</span>
-                    <div class="choices" id="choices-q5">
-                        <button class="choice choice-q5" id="9:16" data-correct="incorrect">九時十六分</button>
-                        <button class="choice choice-q5" id="9:18" data-correct="correct">九時十八分</button>
-                        <button class="choice choice-q5" id="5:18" data-correct="incorrect">五時十八分</button>
-                        <button class="choice choice-q5" id="5:20" data-correct="incorrect">五時二十分</button>
-                    </div>
-                    <div class="controls-p1" id="controls-p1-5">
-                        <button class="clear-p1" id="clear-p1-5">Clear feedback</button>
-                    </div>
-                    <div class="feedback-p1" id="feedback-p1-5"></div>
-                </div>
-
-                <div class="question" id="6:51">
-                    6) <span data-audio="q6">🔈</span>
-                    <div class="choices" id="choices-q6">
-                        <button class="choice choice-q6" id="6:50" data-correct="incorrect">六時五十分</button>
-                        <button class="choice choice-q6" id="6:41" data-correct="incorrect">六時四十一分</button>
-                        <button class="choice choice-q6" id="7:51" data-correct="incorrect">七時五十一分</button>
-                        <button class="choice choice-q6" id="6:51" data-correct="correct">六時五十一分</button>
-                    </div>
-                    <div class="controls-p1" id="controls-p1-6">
-                        <button class="clear-p1" id="clear-p1-6">Clear feedback</button>
-                    </div>
-                    <div class="feedback-p1" id="feedback-p1-6"></div>
-                </div>
+                <p>2) あなたの国で日本のアニメは人気がありますか。</p>
+                <input class="input-1" id="input-1-2">
+                <button class="check" id="check-1-2">Check answer</button>
+                <div class="feedback" id="feedback-1-2"></div>
             </div>
         </div>
+        
+        <div id="part-1">
+            <h2>II. 「アニメ映画監督　宮崎駿」</h2>
+            <div class="small">
+            <p>*Blue underlined words: Reading and meanings appear on mouseover. Audio plays on click.<br>
+            *Red numbered expressions: New grammar points of the lesson. </p>
+            </div>
+            <div id="instructions">
+            <h4>読み方 (reading instructions)</h4>
+            <p>1) Study Kanji and vocabulary:<br>
+                Click the blue words, listen to the audio and examine how the reading corresponds to each character. Then check the meaning of the word. Repeat until you can name the reading and meaning of each word without the popups.</p>
+                <p>2) Get the gist of the passage:<br>
+                Read through the passage and try to get the gist of it.</p>
+                <p>3) Answer content questions:<br>
+                Answer content questions of relevant sections on Canvas.</p>
+             </div>
+            <div id="passage">
+                <p>　日本のアニメ
+                    <span class="audio" data-audio="eega">映画</span>の
+                    <span class="audio" data-audio="kantoku">監督</span>
+                    <span class="grammar" data-grammar="toieba">といえば</span><sup>1</sup>、やはり
+                    <span class="audio" data-audio="miyazaki">宮崎</span>
+                    <span class="audio" data-audio="hayao">駿</span>だ。
+                    <span class="audio" data-audio="sentochihiro">「千と千尋の神隠し」</span>は、
+                    <span class="audio" data-audio="kare">彼</span>の
+                    <span class="audio" data-audio="sakuhin">作品</span>の
+                    <span class="audio" data-audio="naka">中</span>で
+                    <span class="audio" data-audio="tokuni">特に</span>
+                    <span class="audio" data-audio="ninki">人気</span>がある。これは２００３年にアカデミー
+                    <span class="audio" data-audio="shyoo">賞</span>を
+                    <span class="audio" data-audio="totta">取った</span>
+                    <span class="audio" data-audio="eega">映画</span>だ。アニメに
+                    <span class="audio" data-audio="kyoomi">興味</span>がある人
+                    <span class="grammar" data-grammar="nara">なら</span><sup>2</sup>、「もののけ<span class="audio" data-audio="hime">姫</span>」や「となりのトトロ」も見たことがあるかもしれない。
+                    <span class="audio" data-audio="kare">彼</span>のアニメのストーリーには
+                    <span class="audio" data-audio="kankyoomondai">環境問題</span>のメッセージがあって、
+                    <span class="audio" data-audio="otona">大人</span>も
+                    <span class="audio" data-audio="kangae">考え</span>させられるものが
+                    <span class="audio" data-audio="ooi">多い</span>。</p>
 
-        <div id="part2">
-            <h3>＜パート２＞　考えましょう！　Let's think!</h3>
-            <p><strong>Instructions:</strong> Drag one tile from the left tile bank and another tile from the right tile bank to create じゅくご (i.e., words comprised of multiple Kanji) of time expressions. Examine the rules of combinations and reading/meaning of each じゅくご to derive compounding rules (or lack thereof).</p>
-            <p><strong>Note:</strong> You will have to click "reset" after creating each じゅくご.</p>
+                <p>　<span class="audio" data-audio="miyazaki">宮崎</span>
+                    <span class="audio" data-audio="kantoku">監督</span>は、
+                    <span class="audio" data-audio="kami">髪</span>とひげが
+                    <span class="audio" data-audio="shirokute">白くて</span>、
+                    <span class="audio" data-audio="kuroi">黒い</span>ふちのメガネをかけている。<span class="audio" data-audio="egao">笑顔</span>の
+                    <span class="audio" data-audio="kantoku">監督</span>は
+                    <span class="audio" data-audio="yasashisoo">優しそう</span>に見えるが、
+                    <span class="audio" data-audio="eega">映画</span>を
+                    <span class="audio" data-audio="tsukuru">作る</span>
+                    <span class="audio" data-audio="toki">時</span>にはとても
+                    <span class="audio" data-audio="kibishiku">厳しく</span>なる。
+                    <span class="audio" data-audio="tatoeba">例えば</span>、
+                    <span class="audio" data-audio="jibun">自分</span>が
+                    <span class="audio" data-audio="iu">言う</span>
+                    <span class="grammar" data-grammar="toorini">とおりに</span><sup>3</sup>
+                    <span class="audio" data-audio="kakeru">描ける</span>までスタッフに
+                    <span class="audio" data-audio="nando">何度</span>も
+                    <span class="audio" data-audio="e">絵</span>を
+                    <span class="audio" data-audio="naosaseru">直させる</span>。スタッフが
+                    <span class="audio" data-audio="kaita">描いた</span>
+                    <span class="audio" data-audio="niku">肉</span>の
+                    <span class="audio" data-audio="e">絵</span>を見て、「この
+                    <span class="audio" data-audio="niku">肉</span>はゴムのようだ。かたいのか、やわらかいのか、
+                    <span class="audio" data-audio="kangae">考え</span>て
+                    <span class="audio" data-audio="kaki">描き</span>なさい」と
+                    <span class="audio" data-audio="okotta">怒った</span>こともある
+                    <span class="grammar" data-grammar="rashii">らしい</span><sup>4</sup>。また、たった４
+                    <span class="audio" data-audio="byoo">秒</span>のシーンを１年
+                    <span class="audio" data-audio="ijyoo">以上</span>かけて
+                    <span class="audio" data-audio="tsukutta">作った</span>こともあるそうだ。</p>
 
-            <div id="grid-p2">
-                <div class="tiles-p2" id="left-kanji">
-                    <p>かんじ１</p>
-                    <div class="tile-p2" draggable="true" data-type="left" data-name="every">毎</div>
-                    <div class="tile-p2" draggable="true" data-type="left" data-name="now">今</div>
-                </div>
-            
-                <div class="tiles-p2" id="right-kanji">
-                    <p>かんじ２</p>
-                    <div class="tile-p2" draggable="true" data-type="right" data-name="day">日</div>
-                    <div class="tile-p2" draggable="true" data-type="right" data-name="month">月</div>
-                    <div class="tile-p2" draggable="true" data-type="right" data-name="year">年</div>
-                </div>
+                <p>　「はずかしい
+                    <span class="audio" data-audio="sakuhin">作品</span>は
+                    <span class="audio" data-audio="tsukuri">作り</span>たくない」と
+                    <span class="audio" data-audio="kantoku">監督</span>は言っている。だから、いい<span class="audio" data-audio="sakuhin">作品</span>を
+                    <span class="audio" data-audio="tsukuru">作る</span>
+                    <span class="grammar" data-grammar="tameni1">ために</span><sup>5</sup>、
+                    <span class="audio" data-audio="asa">朝</span>から
+                    <span class="audio" data-audio="ban">晩</span>までほとんど
+                    <span class="audio" data-audio="yasumanai">休まない</span>で
+                    <span class="audio" data-audio="shigoto">仕事</span>をする。
+                    <span class="audio" data-audio="hirugohan">昼ご飯</span>と
+                    <span class="audio" data-audio="bangohan">晩ご飯</span>も５
+                    <span class="audio" data-audio="hun">分</span>で食べる。テレビや
+                    <span class="audio" data-audio="shumi">趣味</span>に
+                    <span class="audio" data-audio="taisetsu">大切</span>な
+                    <span class="audio" data-audio="jikan">時間</span>を
+                    <span class="audio" data-audio="tsukawanai">使わない</span>。
+                    <span class="audio" data-audio="wakai">若い</span>時は、
+                    <span class="audio" data-audio="asa">朝</span>９時から
+                    <span class="audio" data-audio="tsugi">次</span>の
+                    <span class="audio" data-audio="hi">日</span>の
+                    <span class="audio" data-audio="asa">朝</span>５時まで
+                    <span class="audio" data-audio="shigoto">仕事</span>をしていたそうだ。このように<span class="audio" data-audio="jibun">自分</span>にも
+                    <span class="audio" data-audio="kibishii">厳しい</span>から、
+                    <span class="audio" data-audio="utsukushi">美し</span>くて
+                    <span class="audio" data-audio="geejutsuteki">芸術的</span>なアニメが
+                    <span class="audio" data-audio="tsukureru">作れる</span>のだ。</p>
 
-                <div class="zone-p2" id="assembly-box">
-                    <div class="dropzone-p2" id="assembly">
-                        <p>Drop here</p>
-                        <div class="slot-p2" data-accept="left">かんじ１</div>
-                        <div class="slot-p2" data-accept="right">かんじ２</div>
-                    </div>
-                    <div class="feedback-p2" id="feedback-general"></div>
-                    <div class="feedback-p2" id="feedback-reading"></div>
-                    <div class="feedback-p2" id="feedback-meaning"></div>
-                    </div>
-                </div>
-
-                <div class="summary">
-                    <div id="word-summary"></div>
-                    <div id="rule-summary"></div>
-                </div>
-
-                <div class="controls-p2" id="controls-p2-1">
-                    <button class="reset" id="reset-p2">Reset</button>
-                    <button id="summary">Show summary</button>
-                </div>
+                <p>　<span class="audio" data-audio="e">絵</span>もストーリーもすばらしい
+                <span class="audio" data-audio="kare">彼</span>の
+                <span class="audio" data-audio="sakuhin">作品</span>は、いつまでも
+                <span class="audio" data-audio="sekaijuu">世界中</span>で
+                <span class="audio" data-audio="aisare">愛され</span>
+                <span class="audio" data-audio="tsudukeru">続ける</span>だろう。</p>
+            </div>
+            <div id="profile">
+                <p>&lt;プロフィール
+                    <span class="audio" data-audio="shyookai">紹介</span>&gt; <br>
+                １９４１年
+                <span class="audio" data-audio="tokyo">東京</span>
+                <span class="audio" data-audio="umare">生まれ</span>。
+                <span class="audio" data-audio="kodomo">子ども</span>の時から
+                <span class="audio" data-audio="e">絵</span>が
+                <span class="audio" data-audio="tokui">得意</span>で、マンガを
+                <span class="audio" data-audio="yomu">読む</span>のも
+                <span class="audio" data-audio="kaku">描く</span>のも
+                <span class="audio" data-audio="daisuki">大好き</span>だった。
+                <span class="audio" data-audio="kookoo">高校</span>の時にアニメ
+                <span class="audio" data-audio="eega">映画</span>を見たの
+                <span class="grammar" data-grammar="kikkake">がきっかけで</span><sup>6</sup>、アニメにも<span class="audio" data-audio="kyoomi">興味</span>を
+                <span class="audio" data-audio="motsu">持つ</span>
+                <span class="grammar" data-grammar="yooninaru">ようになる</span><sup>7</sup>。大学
+                <span class="audio" data-audio="sotsugyoogo">卒業後</span>、アニメ
+                <span class="audio" data-audio="sakka">作家</span>になる
+                <span class="grammar" data-grammar="tameni2">ために</span><sup>5</sup>アニメ
+                <span class="audio" data-audio="kaisha">会社</span>に
+                <span class="audio" data-audio="shuushoku">就職</span>。その
+                <span class="audio" data-audio="go">後</span>、
+                <span class="audio" data-audio="ooku">多く</span>のアニメ
+                <span class="audio" data-audio="sakuhin">作品</span>を
+                <span class="audio" data-audio="happyoo">発表</span>してベルリン
+                <span class="audio" data-audio="kokusai">国際</span>
+                <span class="audio" data-audio="eegasai">映画祭</span>などにも
+                <span class="audio" data-audio="shuppin">出品</span>。２０１４年には、日本人で
+                <span class="audio" data-audio="hutarime">２人目</span>のアカデミー
+                <span class="audio" data-audio="meeyoshyoo">名誉賞</span>を
+                <span class="audio" data-audio="jushyoo">受賞</span>した。</p>
             </div>
         </div>
-
-        <div id="part3">
-            <h3>＜パート３＞　こんなとき、どうする？　What would you do in these situations?</h3>
-            <p><strong>Instructions:</strong> You are studying abroad at a Japanese university. How would you ask your professor for permission in the following situations?</p>
-            <p><strong>Notes:</strong> Make sure to use Kanji for the verb and click the "hint" button for help.</p>
-
-        <div class="exercise" id="exercise-p3">
-            <div class="situation" id="situation-1">
-                1) You want to <span>speak English</span> in class.
-                <div class="answer" id="answer-1">
-                    <input class="input" id="input-1">
-                </div>
-                <div class="feedback-p3" id="feedback-p3-1"></div>
-                <div class="controls-p3" id="controls-p3-1">
-                    <button class="check-p3" id="check-p3-1">Check answer</button>
-                    <button class="hint-p3" id="hint-p3-1">Hint</button>
-                    <button class="clear-p3" id="clear-p3-1">Clear feedback</button>
-                </div>
-            </div> 
-
-            <div class="situation" id="situation-2">
-                2) You want to <span>look at your notes（ノート）</span> during an exam.
-                <div class="answer" id="answer-2">
-                    <input class="input" id="input-2">
-                </div>
-                <div class="feedback-p3" id="feedback-p3-2"></div>
-                <div class="controls-p3" id="controls-p3-2">
-                    <button class="check-p3" id="check-p3-2">Check answer</button>
-                    <button class="hint-p3" id="hint-p3-2">Hint</button>
-                    <button class="clear-p3" id="clear-p3-2">Clear feedback</button>
-                </div>
-            </div> 
-
-            <div class="situation" id="situation-3">
-                3) You want to <span>stand up</span> in class since you cannot see the board.
-                <div class="answer" id="answer-3">
-                    <input class="input" id="input-3">
-                </div>
-                <div class="feedback-p3" id="feedback-p3-3"></div>
-                <div class="controls-p3" id="controls-p3-3">
-                    <button class="check-p3" id="check-p3-3">Check answer</button>
-                    <button class="hint-p3" id="hint-p3-3">Hint</button>
-                    <button class="clear-p3" id="clear-p3-3">Clear feedback</button>
-                </div>
-            </div>
-            
-            <div class="situation" id="situation-4">
-                4) You want to <span>write English</span> in an exam.
-                <div class="answer" id="answer-4">
-                    <input class="input" id="input-4">
-                </div>
-                <div class="feedback-p3" id="feedback-p3-4"></div>
-                <div class="controls-p3" id="controls-p3-4">
-                    <button class="check-p3" id="check-p3-4">Check answer</button>
-                    <button class="hint-p3" id="hint-p3-4">Hint</button>
-                    <button class="clear-p3" id="clear-p3-4">Clear feedback</button>
-                </div>
-            </div>
-
-            <div class="situation" id="situation-5">
-                5) You want to <span>ask your friend</span> for help with an assignment.
-                <div class="answer" id="answer-5">
-                    <input class="input" id="input-5">
-                </div>
-                <div class="feedback-p3" id="feedback-p3-5"></div>
-                <div class="controls-p3" id="controls-p3-5">
-                    <button class="check-p3" id="check-p3-5">Check answer</button>
-                    <button class="hint-p3" id="hint-p3-5">Hint</button>
-                    <button class="clear-p3" id="clear-p3-5">Clear feedback</button>
-                </div>
-            </div> 
-        </div>
-    </div>
-
         <script src="script.js"></script>
     </body>
 </html>
