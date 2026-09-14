@@ -419,7 +419,9 @@ const definitionMap = {
     happyoo: {
         reading: "はっ・ぴょう",
         meaning: "to present; はっぴょうして is the te-form of はっぴょうする",
-    kokusai: "international",
+    kokusai: {
+        reading: "こく・さい",
+        meaning: "international",
     },
     eegasai: {
         reading: "えい・が・さい",
